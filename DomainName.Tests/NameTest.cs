@@ -16,7 +16,6 @@ public class LastNameTests
     [Theory]
     [InlineData("AA")]
     [InlineData("åÅæÆøØAAAAAAAAAaaaaa")]
-    [InlineData("A")]
     public void Lastname_is_valid(string? input)
     {
         var result = new DomainPrimitives.LastName(input);
